@@ -40,6 +40,7 @@ async function startServer() {
 
 function stop() {
   console.log("Stopping server");
+  console.log("Server stopped");
   server.close();
 }
 
