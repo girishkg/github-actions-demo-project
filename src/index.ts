@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import body from "body-parser";
+// import { getRecipe } from "./controllers/recipes/getRecipe";
 
 const app = express();
 
@@ -43,5 +44,8 @@ function stop() {
 }
 
 export { server, startServer, stop };
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 
 startServer();
